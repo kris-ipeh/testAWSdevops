@@ -2,16 +2,12 @@
 
 Créer un pipeline de livraison continue avec AWS à partir d'un répertoire Git.
 
-[lien tuto](https://aws.amazon.com/fr/getting-started/hands-on/create-continuous-delivery-pipeline/?e=gs2020&p=devops)
-
 ## Prérequis
 
 1. Avoir un compte et se connecter à la console AWS
 2. Disposer d'un repository git du code source hébergé sur Github
 
 ## Configurer une application avec AWS Elastic Beanstalk
-
-[lien tuto](https://aws.amazon.com/fr/getting-started/hands-on/create-continuous-delivery-pipeline/module-two/)
 
 Aller sur la [console AWS Elastic Beanstalk](https://console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/welcome) et cliquer sur le bouton `Créer une nouvelle application`.
 
@@ -30,8 +26,6 @@ Dans la section `Code de l'application`, sélectionner `Exemple d'application`, 
 Cliquer sur `Créer un environnement` et attendre la fin de la création, celà peut prendre quelques minutes.
 
 ## Créer un projet de génération avec AWS Code Build
-
-[lien tuto](https://aws.amazon.com/fr/getting-started/hands-on/create-continuous-delivery-pipeline/module-three/)
 
 Aller sur la [console AWS CodeBuild](https://console.aws.amazon.com/codesuite/codebuild/start?region=us-west-2) et cliquer sur le bouton `Créer un projet`.
 
@@ -60,8 +54,6 @@ Cliquer sur `Créer un projet de génération` puis sur `Démarrer la générati
 
 ## Créer un pipeline de livraison continue avec AWS Code Pipeline
 
-[lien tuto](https://aws.amazon.com/fr/getting-started/hands-on/create-continuous-delivery-pipeline/module-four/)
-
 Aller sur la [console AWS CodePipeline](https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/start?region=us-west-2) et cliquer sur le bouton `Créer un pipeline`.
 
 Donner au projet le nom de l'app suivi de -pipeline _(ex: testAWSdevops-pipeline)_, s'assurer que `nouveau rôle de service` est coché puis cliquer sur `Suivant`.
@@ -77,3 +69,7 @@ Vérifier la configuration et cliquer sur `Créer un pipeline`.
 Une fois la phase `Deploy` passée en vert et le message `Succeeded`, cliquez sur « AWS Elastic Beanstalk ». Vos environnements AWS Elastic Beanstalk figurent dans un nouvel onglet.
 
 L'application à été déployée sur l'URL figurant sur la ligne `Devopsgettingstarted-env`.
+
+---
+
+[source tuto officiel AWS](https://aws.amazon.com/fr/getting-started/hands-on/create-continuous-delivery-pipeline/?e=gs2020&p=devops)
